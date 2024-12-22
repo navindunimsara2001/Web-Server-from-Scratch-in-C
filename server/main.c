@@ -19,10 +19,10 @@ int main() {
         "Content-Type: text/html\r\n"
         "Content-Length: 57\r\n"
         "\r\n"
-        "<html><body><h1>E Whotto Welcome to the WinSock Web Server!</h1></body></html>";
+        "<html><body><h2>Welcome to the Web Server!</h2></body></html>";
 
     // Initialize Winsock
-    printf("Whotto Initializing Winsock...\n");
+    printf("Initializing Winsock...\n");
     if (WSAStartup(MAKEWORD(2, 2), &wsa) != 0) {
         printf("Failed. Error Code : %d\n", WSAGetLastError());
         return 1;
@@ -58,7 +58,7 @@ int main() {
         WSACleanup();
         return 1;
     }
-    printf("Pako Listening on port %d...\n", PORT);
+    printf("Listening on port %d...\n", PORT);
 
     // Accept connections
     while ((client_socket = accept(server_socket, (struct sockaddr *)&client_addr, &client_addr_len)) != INVALID_SOCKET) {
