@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1734852480 source:c:\users\navindu\documents\project\c lang\web-server\server\main.c
+	<stdio.h>
+	<winsock2.h>
+	"server.h"
+
+1734852465 c:\users\navindu\documents\project\c lang\web-server\server\server.h
+	<winsock2.h>
+
